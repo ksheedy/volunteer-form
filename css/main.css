@@ -32,20 +32,21 @@ textarea {
 
 input,
 textarea {
-  border: 1px solid ##70ad55;
+  border: 2px solid #6e8c62;
 }
 
-button {
-  font-size:
-  padding:
-  background-color:
-  border:
-  color:
-  border-radius:
-  cursor: pointer;
+fieldset,
+hr {
+  border-top: 2px solid #70ad55;
+}
+
+.btn {
+  background-color: #6e8c62;
+  border-color: #6e8c62;
+  color: #fff;
 }
 
 footer {
-  background-color: #6e8c62;
+  background-color: #70ad55;
   color: #fff;
 }

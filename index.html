@@ -5,147 +5,152 @@
   <title>Volunteer Form</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
-  <link href="css/type.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="gutter-1-2 push-2">
     <h1>Apply to be a tree planter</h1>
     <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
   </header>
-  <form class="" action="thanks.html" method="post">
-    <fieldset>
-      <legend>Personal Details</legend>
+  <form class="gutter-1-2" action="thanks.html" method="post">
+    <div>
+      <h2>Personal details</h2>
       <div class="">
-        <label for="name">Full Name</label>
-        <input id="name" name="" value="">
+        <label for="name">Full name</label>
+        <input id="name">
         <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
       </div>
 
       <div class="">
         <label for="call">What should we call you?</label>
-        <input id="call" name="" value="">
+        <input id="call">
         <p>What all your friends call you, e.g. “Liz”.</p>
       </div>
 
       <div class="">
-        <label for="dob">Date of Birth</label>
-        <input id="dob" type="date" name="" value="" placeholder="yyyy-mm-dd">
+        <label for="dob">Date of birth</label>
+        <input id="dob" type="date">
         <p>What all your friends call you, e.g. “Liz”.</p>
       </div>
 
       <div class="">
         <label for="shirt">T-shirt size</label>
-        <input id="shirt" name="" value="">
-          <option value="">Fitted: XS</option>
-          <option value="">Fitted: S</option>
-          <option value="">Fitted: M</option>
-          <option value="">Fitted: L</option>
-          <option value="">Fitted: XL</option>
-          <option value="">Straight-cut: XS</option>
-          <option value="">Straight-cut: S</option>
-          <option value="">Straight-cut: M</option>
-          <option value="">Straight-cut: L</option>
-          <option value="">Straight-cut: XL</option>
+        <select id="shirt">
+          <option value="">Select a t-shirt size</option>
+          <option>Fitted: XS</option>
+          <option>Fitted: S</option>
+          <option>Fitted: M</option>
+          <option>Fitted: L</option>
+          <option>Fitted: XL</option>
+          <option>Straight-cut: XS</option>
+          <option>Straight-cut: S</option>
+          <option>Straight-cut: M</option>
+          <option>Straight-cut: L</option>
+          <option>Straight-cut: XL</option>
+        </select>
       </div>
 
       <div class="">
         <label for="email">Email</label>
-        <input id="email" type="email" name="" value="">
+        <input id="email" type="email">
       </div>
 
       <div class="">
         <label for="phone">Phone number <span class="optional">(optional)</span></label>
-        <input id="phone" type="tel" name="" value="">
+        <input id="phone" type="tel">
       </div>
-    </fieldset>
+    </div>
 
     <fieldset>
-      <legend>Address</legend>
+      <legend class="hidden">Address</legend>
+      <h2>Address</h2>
       <label for="street">Street address</label>
-      <input id="street" type="text" name="" value="">
+      <input id="street" type="text">
 
       <label for="city">City</label>
-      <input id="city" type="text" name="" value="">
+      <input id="city" type="text">
 
       <label for="prov">Province</label>
-      <input id="prov" name="" value="" placeholder="Select a province">
-        <option value="">Alberta</option>
-        <option value="">British Columbia</option>
-        <option value="">Manitoba</option>
-        <option value="">New Brunswick</option>
-        <option value="">Newfoundland & Labrador</option>
-        <option value="">Northwest Territories</option>
-        <option value="">Nova Scotia</option>
-        <option value="">Nunavut</option>
-        <option value="">Ontario</option>
-        <option value="">Prince Edward Island</option>
-        <option value="">Québec</option>
-        <option value="">Saskatchewan</option>
-        <option value="">Yukon</option>
+      <select id="prov">
+        <option value="">Select a province</option>
+        <option>Alberta</option>
+        <option>British Columbia</option>
+        <option>Manitoba</option>
+        <option>New Brunswick</option>
+        <option>Newfoundland & Labrador</option>
+        <option>Northwest Territories</option>
+        <option>Nova Scotia</option>
+        <option>Nunavut</option>
+        <option>Ontario</option>
+        <option>Prince Edward Island</option>
+        <option>Québec</option>
+        <option>Saskatchewan</option>
+        <option>Yukon</option>
+      </select>
 
       <label for="postal">Postal code</label>
-      <input id="postal" type="text" name="" value="">
+      <input id="postal" type="text">
     </fieldset>
 
     <fieldset>
-      <legend></legend>
+      <legend class="hidden">activities</legend>
       <div class="">
         <h2>What activities are you interested in helping with?</h2>
-        <input id="diggingholes" type="checkbox" name="" value="">
-        <label for="diggingholes">Digging Holes</label>
+        <input id="diggingholes" type="checkbox">
+        <label for="diggingholes">Digging holes</label>
 
-        <input id="gettingdirty" type="checkbox" name="" value="">
+        <input id="gettingdirty" type="checkbox">
         <label for="gettingdirty">Getting dirty</label>
 
-        <input id="liftingheavy" type="checkbox" name="" value="">
+        <input id="liftingheavy" type="checkbox">
         <label for="liftingheavy">Lifting heavy objects</label>
 
-        <input id="transportingtrees" type="checkbox" name="" value="">
+        <input id="transportingtrees" type="checkbox">
         <label for="transportingtrees">Transporting trees</label>
 
-        <input id="takingphotos" type="checkbox" name="" value="">
+        <input id="takingphotos" type="checkbox">
         <label for="takingphotos">Taking photos</label>
 
-        <input id="onlinepub" type="checkbox" name="" value="">
+        <input id="onlinepub" type="checkbox">
         <label for="onlinepub">Online publishing</label>
 
-        <input id="managingpeople" type="checkbox" name="" value="">
+        <input id="managingpeople" type="checkbox">
         <label for="managingpeople">Managing people</label>
       </div>
 
       <div class="">
         <h2>Do you have any experience with the following?</h2>
-        <input id="shovels" type="checkbox" name="" value="">
+        <input id="shovels" type="checkbox">
         <label for="shovels">Shovels</label>
 
-        <input id="gps" type="checkbox" name="" value="">
+        <input id="gps" type="checkbox">
         <label for="gps">Hand-held GPS</label>
 
-        <input id="writing" type="checkbox" name="" value="">
+        <input id="writing" type="checkbox">
         <label for="writing">Writing & blogging</label>
 
-        <input id="photo" type="checkbox" name="" value="">
+        <input id="photo" type="checkbox">
         <label for="photo">Photography</label>
 
-        <input id="trail" type="checkbox" name="" value="">
+        <input id="trail" type="checkbox">
         <label for="trail">Trail & hill climbing</label>
 
-        <input id="bushcraft" type="checkbox" name="" value="">
+        <input id="bushcraft" type="checkbox">
         <label for="bushcraft">Bush craft</label>
 
-        <input id="atv" type="checkbox" name="" value="">
+        <input id="atv" type="checkbox">
         <label for="atv">ATVs</label>
 
-        <input id="plant" type="checkbox" name="" value="">
+        <input id="plant" type="checkbox">
         <label for="plant">Plant identification</label>
 
-        <input id="event" type="checkbox" name="" value="">
+        <input id="event" type="checkbox">
         <label for="event">Special event planning</label>
 
-        <input id="speaking" type="checkbox" name="" value="">
+        <input id="speaking" type="checkbox">
         <label for="speaking">Speaking to groups</label>
       </div>
     </fieldset>
@@ -154,41 +159,45 @@
       <legend class="hidden">Vehicles</legend>
       <div class="">
         <h2>Do you have a valid driver's license?</h2>
-        <input id="yes" type="radio" name="" value="">
-        <label for="yes">Yes</label>
+        <input id="dlyes" type="radio" name="dl">
+        <label for="dlyes">Yes</label>
 
-        <input id="no" type="radio" name="" value="">
-        <label for="no">No</label>
+        <input id="dlno" type="radio" name="dl">
+        <label for="dlno">No</label>
       </div>
       <div class="">
         <h2>Do you have a pick-up truck you'd be willing to use?</h2>
-        <input id="yes" type="radio" name="" value="">
-        <label for="yes">Yes</label>
+        <input id="puyes" type="radio" name="pu">
+        <label for="puyes">Yes</label>
 
-        <input id="no" type="radio" name="" value="">
-        <label for="no">No</label>
+        <input id="puno" type="radio" name="pu">
+        <label for="puno">No</label>
       </div>
 
       <div class="">
         <h2>Do you have up-to-date first-aid certification?</h2>
-        <input id="yes" type="radio" name="" value="">
-        <label for="yes">Yes</label>
+        <input id="fayes" type="radio" name="fa">
+        <label for="fayes">Yes</label>
 
-        <input id="no" type="radio" name="" value="">
-        <label for="no">No</label>
+        <input id="fano" type="radio" name="fa">
+        <label for="fano">No</label>
       </div>
 
     </fieldset>
 
     <fieldset>
-      <legend></legend>
-      <label for="comments">Please let us know any comments or questions you may have.</label>
-      <textarea id="comments" name="name" rows="8" cols="80"></textarea>
+      <legend class="hidden">comments</legend>
+      <h2>Please let us know any comments or questions you may have.</h2>
+      <textarea id="comments" rows="8" cols="80"></textarea>
     </fieldset>
 
-    <button type="submit" name="button"></button>
+    <div class="text-center">
+      <hr>
+      <button class="btn" type="submit">Apply</button>
+    </div>
+
   </form>
-  <footer>
+  <footer class="gutter-1-2">
     <p>© Tree Hugger International Organization</p>
   </footer>
 </body>
