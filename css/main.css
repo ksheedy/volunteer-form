@@ -13,17 +13,11 @@ header {
 
 label {
   display: block;
+  padding-bottom: .125em;
 }
 
 form div {
   margin-bottom: 1.5rem;
-}
-
-input,
-select,
-textarea {
-  width: 15em;
-  font-size: 1.125rem;
 }
 
 textarea {
@@ -31,7 +25,12 @@ textarea {
 }
 
 input,
-textarea {
+textarea,
+select {
+  border: 2px solid #6e8c62;
+}
+
+input[type="checkbox"] + label::before {
   border: 2px solid #6e8c62;
 }
 
