@@ -12,9 +12,11 @@
 </head>
 <body>
   <header class="island-1-2 push-2">
-    <h1 class="pad-t-1-2 push-1-2">Apply to be a tree planter</h1>
-    <div class="">
-      <p class="mega">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+    <div class="max-length">
+      <h1 class="pad-t-1-2 push-1-2">Apply to be a tree planter</h1>
+      <div class="">
+        <p class="mega">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+      </div>
     </div>
   </header>
   <form class="gutter-1-2" action="thanks.html" method="post">
@@ -209,17 +211,17 @@
       </div>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="push-none">
       <legend class="hidden">Vehicles</legend>
-      <div class="">
-        <h2 class="giga">Do you have a valid driver's license?</h2>
+      <div class="push-2">
+        <h2 class="pad-t-2 giga">Do you have a valid driver's license?</h2>
         <input id="dlyes" type="radio" name="dl">
         <label for="dlyes">Yes</label>
 
         <input id="dlno" type="radio" name="dl">
         <label for="dlno">No</label>
       </div>
-      <div class="">
+      <div class="push-2">
         <h2 class="giga">Do you have a pick-up truck you'd be willing to use?</h2>
         <input id="puyes" type="radio" name="pu">
         <label for="puyes">Yes</label>
@@ -228,7 +230,7 @@
         <label for="puno">No</label>
       </div>
 
-      <div class="">
+      <div class="push">
         <h2 class="giga">Do you have up-to-date first-aid certification?</h2>
         <input id="fayes" type="radio" name="fa">
         <label for="fayes">Yes</label>
@@ -238,17 +240,16 @@
       </div>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="push-2">
       <legend class="hidden">comments</legend>
-      <h2 class="giga">Please let us know any comments or questions you may have.</h2>
+      <h2 class="pad-t-2 push-1-2 giga">Please let us know any comments or questions you may have.</h2>
       <textarea id="comments" rows="8" cols="80"></textarea>
     </fieldset>
 
-    <div class="text-center">
-      <hr>
+    <div class="text-center push-2">
+      <hr class="push-2">
       <button class="btn gutter-2" type="submit">Apply</button>
     </div>
-
   </form>
   <footer class="gutter-1-2 pad-t pad-b">
     <p class="push-none">© Tree Hugger International Organization</p>
